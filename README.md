@@ -57,9 +57,9 @@ This repository will consist of a **Long Short-Term Memory** implementation of a
 ![Accuracy Python Console](https://github.com/paras009/RNN-based-Stock-Price-Prediction-using-LSTM/blob/master/images/loss.PNG)
 
 ## Contribution
-- The project is built completely by Paras Varshney.</br>
 ![Owner](https://avatars1.githubusercontent.com/u/25752028?s=60&u=76513c2a9c298b71a67a5e8712fc5319c4c2b9bd&v=4)
 
+- The project is built completely by Paras Varshney.</br>
 Connect on [LinkedIn](https://www.linkedin.com/in/pv009)</br>
 Follow on [Medium](https://medium.com/@pv009)</br>
 Follow on [Github](https://github.com/paras009)</br>
