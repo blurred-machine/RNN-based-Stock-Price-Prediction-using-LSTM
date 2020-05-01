@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.externals import joblib 
 
-PAST_DAYS = 60
+PAST_DAYS = 120
 
 # Importing the training set
 dataset_train = pd.read_csv('Google_Stock_Price_Train.csv')
