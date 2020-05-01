@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.externals import joblib 
 
+PAST_DAYS = 60
+
 # Importing the training set
 dataset_train = pd.read_csv('Google_Stock_Price_Train.csv')
 training_set = dataset_train.iloc[:, 1:2].values
@@ -23,8 +25,8 @@ training_set_scaled = sc.fit_transform(training_set)
 # Creating a data structure with 60 timesteps and 1 output
 X_train = []
 y_train = []
-for i in range(60, 1258):
-    X_train.append(training_set_scaled[i-60:i, 0])
+for i in range(PAST_DAYS, 1258):
+    X_train.append(training_set_scaled[i-PAST_DAYS:i, 0])
     y_train.append(training_set_scaled[i, 0])
 X_train, y_train = np.array(X_train), np.array(y_train)
 
@@ -57,7 +59,7 @@ regressor.add(Dropout(0.2))
 regressor.add(Dense(units = 1))
 
 regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
-regressor.fit(X_train, y_train, epochs = 50, batch_size = 32)
+regressor.fit(X_train, y_train, epochs = 100, batch_size = 32)
 
 joblib.dump(regressor, "regressor.pkl")
 
@@ -68,7 +70,7 @@ real_stock_price = dataset_test.iloc[:, 1:2].values
 
 # Getting the predicted stock price of 2017
 dataset_total = pd.concat((dataset_train['Open'], dataset_test['Open']), axis = 0)
-inputs = dataset_total[len(dataset_total) - len(dataset_test) - 60:].values
+inputs = dataset_total[len(dataset_total) - len(dataset_test) - PAST_DAYS:].values
 inputs = inputs.reshape(-1,1)
 inputs = sc.transform(inputs)
 
