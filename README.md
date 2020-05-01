@@ -38,9 +38,10 @@ This repository will consist of a Long Short-Term Memory implementation of a Rec
 
 #### Experiment-6 (120 days, 100 epochs)
 - The first experiment was run for **100 epochs** and learned over past **120 days** of data to analyze how the model will perform on the data and what could be the kind of predictions we can expect from the low epoch values. 
+- This is the final experimentation till now before any hyper parameter tuning, as the model is fitting pretty better over the test data.
 - Below is the screenshot of the real vs the predicted regression for the test dataset.</br>
 
-![120 Days, 100 epochs]()
+![120 Days, 100 epochs](https://github.com/paras009/RNN-based-Stock-Price-Prediction-using-LSTM/blob/master/images/120d-100eP.PNG)
 
 
 
