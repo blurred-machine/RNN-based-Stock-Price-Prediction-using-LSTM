@@ -1,9 +1,13 @@
 # RNN-based-Stock-Price-Prediction-using-LSTM
-This repository will consist of a Long Short-Term Memory implementation of a Recurrent Neural Network used to predict the Stock prices of Google for the next working day based on past few days trend.
+This repository will consist of a **Long Short-Term Memory** implementation of a **Recurrent Neural Network** used to predict the stock prices of Google Stocks for the next working day based on their past few days opening price trends.
 </br>
 
 ## Project Description
 ### About
+- The project is the implementation of _Stock Market Price Predicion_ using a Long Short-Term Memory type of Recurrent Neural Network with **4 hidden layers of LSTM** and each layer is added with a **Droupout** of **0.2** and tested on various values in the Experimentations.
+- The Preprocessing involves the Normailzation of the data using **MinMaxScaler** 
+-  Training set was built considering the past **60 days** data of opening stock value as the learning parameters for the LSTM to predict the next day market opening stock value.
+- Various plots for different experimentations are shown below to understand how the model behaves over the given data showing various parameters dependence.
 
 ### Experimentations
 #### Experiment-1 (60 days, 10 epochs)
