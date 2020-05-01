@@ -7,6 +7,7 @@ This repository will consist of a **Long Short-Term Memory** implementation of a
 - The project is the implementation of _Stock Market Price Predicion_ using a Long Short-Term Memory type of Recurrent Neural Network with **4 hidden layers of LSTM** and each layer is added with a **Droupout** of **0.2** and tested on various values in the Experimentations.
 - The Preprocessing involves the Normailzation of the data using **MinMaxScaler** 
 -  Training set was built considering the past **60 days** data of opening stock value as the learning parameters for the LSTM to predict the next day market opening stock value.
+- The Data set used in the project is google's stock market data for 5 years starting from **January 2012** till **December 2016** consisting of various features of stocks like opening value and closing values, etc. which can be downloaded from [TRAIN DATA](https://github.com/paras009/RNN-based-Stock-Price-Prediction-using-LSTM/blob/master/Google_Stock_Price_Train.csv) and [TEST DATA](https://github.com/paras009/RNN-based-Stock-Price-Prediction-using-LSTM/blob/master/Google_Stock_Price_Test.csv).
 - Various plots for different experimentations are shown below to understand how the model behaves over the given data showing various parameters dependence.
 
 ### Experimentations
@@ -57,6 +58,8 @@ This repository will consist of a **Long Short-Term Memory** implementation of a
 
 ## Contribution
 - The project is built completely by Paras Varshney.</br>
+![Owner](https://avatars1.githubusercontent.com/u/25752028?s=60&u=76513c2a9c298b71a67a5e8712fc5319c4c2b9bd&v=4)
+
 Connect on [LinkedIn](https://www.linkedin.com/in/pv009)</br>
 Follow on [Medium](https://medium.com/@pv009)</br>
 Follow on [Github](https://github.com/paras009)</br>
